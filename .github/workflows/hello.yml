@@ -1,0 +1,14 @@
+name: Hello Workflow
+
+# When to run this workflow
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello, Daaman! 🎉"
